@@ -9,23 +9,10 @@ group :development do
 end
 
 group :production do
-	gem 'pg'
 end
-
-gem 'split', :require => 'split/dashboard'
-
-gem 'activeadmin', '0.5.1'
-
-gem 'shared_workforce'
-
-gem 'carrierwave'
-gem 'mime-types', '~> 1.21'
-gem 'cloudinary'
 
 
 #gem 'rails3-jquery-autocomplete'
-
-gem 'acts-as-taggable-on'
 
 gem 'faraday'
 gem 'cocaine', '0.3.2'
@@ -42,16 +29,8 @@ gem 'kaminari'
 gem 'stringex'
 gem 'simple_form'
 
-gem 'rmagick'
-gem 'paperclip'
-gem 'aws-sdk'
-
-gem 'exifr'
-
-gem 'nokogiri'
 
 group :development do
-  gem 'activeadmin', '0.5.1'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
