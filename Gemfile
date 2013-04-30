@@ -1,0 +1,96 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.11'
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+end
+
+gem 'split', :require => 'split/dashboard'
+
+gem 'activeadmin', '0.5.1'
+
+gem 'shared_workforce'
+
+gem 'carrierwave'
+gem 'mime-types', '~> 1.21'
+gem 'cloudinary'
+
+
+#gem 'rails3-jquery-autocomplete'
+
+gem 'acts-as-taggable-on'
+
+gem 'faraday'
+gem 'cocaine', '0.3.2'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
+gem 'kronic'
+
+gem 'geocoder'
+
+gem 'kaminari'
+
+gem 'stringex'
+gem 'simple_form'
+
+gem 'rmagick'
+gem 'paperclip'
+gem 'aws-sdk'
+
+gem 'exifr'
+
+gem 'nokogiri'
+
+group :development do
+  gem 'activeadmin', '0.5.1'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'heroku'
+  gem 'heroku_san'
+end
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+ gem 'bcrypt-ruby', '~> 3.0.0'
+
+ gem 'turbolinks'
+
+ gem 'stringex'
+
+# To use Jbuilder templates for JSON
+gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'debugger'

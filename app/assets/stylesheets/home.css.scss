@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Futura Bold';
+  src:	 url('../fonts/Futura-Bold.eot?') format('eot'),
+  		url('../fonts/Futura-Bold.woff') format('woff'),
+  		 url('../fonts/Futura-Bold.ttf') format('truetype');
+}
+
+body {
+
+	font-family: 'Futura Bold';
+	background: #3f3f3f
+}
+
+#wrapper {
+
+	width: 1120px;
+	margin: 0 auto;
+	height: 100%
+}
+
+#container {
+	height: 275px;
+	position: absolute;
+	top:50%;
+	width: 1120px;
+	margin-top: -158px;
+}
+
+#logo {
+
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+}
+#logo img {
+	height:125px;
+	width: 100px
+}
+
+#tagline {
+
+	color: white;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-size: 66px;
+	text-align: center;
+	width: 1000px;
+	line-height: 150px;
+}

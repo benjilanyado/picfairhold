@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Picfair - your images are valuable <%= content_for :page_title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+  <% if Rails.env.development? %>
+	<script type="text/javascript" src="//use.typekit.net/eaz7cyl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<% else %>
+
+  <script type="text/javascript" src="//use.typekit.net/fos5tmp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <% end %>
+  <link rel="icon" 
+      type="image/png" 
+      href="assets/favicon.png">
+  <meta property="og:image" content="<%= content_for :fb_page_thumb %>"/>
+  <meta property="og:title" content="<%= content_for :fb_page_title %>" />
+  <meta property="og:site_name" content="FleetNation.com" />
+  <meta property="og:url" content="<%=request.url%>" />
+  <meta property="og:description"
+      content="<%= content_for :fb_page_description %>"/>
+</head>
+<body>
+
+	<div id="wrapper" class="clearfix">
+		<div id="container">
+			<div id="tagline">
+				Your images are valuable.
+			</div>
+
+			<div id="logo">
+				<img src="images/logo.png">
+			</div>
+
+</div>
+	</div>
+
+
+</body>
+</html>
