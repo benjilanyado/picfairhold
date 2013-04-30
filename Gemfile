@@ -29,6 +29,8 @@ gem 'kaminari'
 gem 'stringex'
 gem 'simple_form'
 
+gem 'sqlite3'
+
 
 group :development do
   gem 'better_errors'
